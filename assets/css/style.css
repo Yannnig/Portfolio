@@ -127,6 +127,55 @@ h6 {
   background: #18d26e;
 }
 
+
+
+/* Add styles for the download wrapper */
+.download-wrapper {
+  display: flex; /* Use flexbox to place buttons side by side */
+ 
+  align-items: center; /* Vertically center the items */
+  margin-top: 2px; /* Add some spacing between the title and buttons */
+}
+
+/* New download class */
+.download {
+  display: flex;
+  align-items: center;
+  margin-right: 8px;
+}
+
+.download a {
+  font-size: 24px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  line-height: 1;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  text-decoration: none; /* Add this to remove underline */
+}
+
+.download a:hover {
+  background: #18d26e;
+}
+
+.download span {
+  color: #fff;
+  margin-left: 10px;
+}
+/* Reduce the space between buttons */
+.download:first-child {
+  margin-right: 10px; /* Adjust this value as needed */
+}
+
+.download:last-child {
+  margin-left: 10px; /* Adjust this value as needed */
+}
+
+
 @media (max-width: 992px) {
   #header h1 {
     font-size: 36px;
